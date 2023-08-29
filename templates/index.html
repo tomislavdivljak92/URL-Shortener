@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %} URL Shortener {% endblock %}
+
+{% block main %}
+
+
+
+<div class="container-fluid">
+  <div class="card-deck mb-3">
+    <div class="card mb-4 shadow-sm">
+        <h4 class="my-0 font-weight-normal text-center">Website</h4>
+    </div>
+    <div class="card-body">
+     <form action="your-url", method="post">
+      <label for="url">Website URL</label>
+      <input type="url" name="url" id="url" class="form-control"  placeholder="Enter URL" value="" required>
+      <br>
+      <label for="code">Short Name</label>
+      <input type="text" name="code" id="code"  class="form-control"  placeholder="Enter Short Name" value="" required>
+      <br>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Shorten</button>
+     </form>
+
+
+
+
+  </div>
+
+ </div>
+
+</div>
+
+
+{% endblock %}
